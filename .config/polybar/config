@@ -65,7 +65,7 @@ spacing = 1
 ; BSPWM Workspaces ;
 ;------------------;
 [module/2bspwm]
-type = internal/bspwm
+type = internal/i3
 
 pin-workspaces = true
 inline-mode = false
@@ -489,8 +489,8 @@ cursor-scroll = ns-resize
 ;──────────────────;
 ; BSPWM Workspaces ;
 ;──────────────────;
-[module/bspwm]
-type = internal/bspwm
+[module/i3]
+type = internal/i3
 
 enable-click = true
 pin-workspaces = true
@@ -660,14 +660,6 @@ exec = echo ""
 format-foreground = ${color.blue}
 click-left = dmenupower
 
-;─────;
-; pkg ;
-;─────;
-[module/pkg]
-type = custom/script
-format-foreground = ${color.fg}
-exec = ~/.config/polybar/update
-click-left = ~/.local/bin/update
 
 ;────────;
 ; Record ;
